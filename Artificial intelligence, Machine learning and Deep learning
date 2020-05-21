@@ -1,0 +1,39 @@
+# Artificial intelligence, Machine learning and Deep learning
+# Summary
+    AI - enables the machine to think.
+    ML - provide statistical tool to explore data.
+    DL – multi neural network architecture (mimic human brains).
+# Artificial intelligence
+    AI (artificial intelligence) is the mimicking of human intelligence by machines, especially computer systems. These processes include learning, self-correction and reasoning. Some of the applications of AI include speech recognition and machine vision. Artificial Intelligence is advancing dramatically. It is already transforming our world socially, politically and economically.
+    It was coined by John McCarthy, an American computer scientist, in 1956 at The Dartmouth Conference where the idea was born.
+  Some Application of AI
+    Artificial Intelligence in Healthcare: Companies are applying machine learning to make better and faster diagnoses than humans. One of the best-known technologies is IBM’s Watson. It understands natural language and can respond to questions asked of it. The system mines patient data and other available data sources to form a hypothesis, which it then presents with a confidence scoring schema. AI is a study realized to emulate human intelligence into computer technology that could assist both, the doctor and the patients.
+    Artificial Intelligence in business: Robotic process automation is being applied to highly repetitive tasks normally performed by humans. Machine learning algorithms are being integrated into analytics and CRM (Customer relationship management) platforms to uncover information on how to better serve customers. Chabot’s have already been incorporated into websites and e companies to provide immediate service to customers. Automation of job positions has also become a talking point among academics and IT consultancies.
+    AI in education: It automates grading, giving educators more time. It can also assess students and adapt to their needs, helping them work at their own pace.
+    AI in Autonomous vehicles: Just like humans, self-driving cars need to have sensors to understand the world around them and a brain to collect, processes and choose specific actions based on information gathered. Autonomous vehicles are with advanced tool to gather information, including long range radar, cameras, and LIDAR. Each of the technologies are used in different capacities and each collects different information. This information is useless, unless it is processed and some form of information is taken based on the gathered information. This is where artificial intelligence comes into play and can be compared to human brain. AI has several applications for these vehicles and among them the more immediate ones are as follows:
+        •	Directing the car to gas station or recharge station when it is running low on fuel.
+        •	Adjust the trips directions based on known traffic conditions to find the quickest route.
+        •	Incorporate speech recognition for advanced communication with passengers.
+        •	Natural language interfaces and virtual assistance technologies.
+    AI for robotics will allow us to address the challenges in taking care of an aging population and allow much longer independence. It will drastically reduce, may be even bring down traffic accidents and deaths, as well as enable disaster response for dangerous situations for example the nuclear meltdown at the fukushima power plant.
+    Cyborg Technology: One of the main limitations of being human is simply our own bodies and brains. Researcher Shimon Whiteson thinks that in the future, we will be able to augment ourselves with computers and enhance many of our own natural abilities. Though many of these possible cyborg enhancements would be added for convenience, others may serve a more practical purpose. Yoky Matsuka of Nest believes that AI will become useful for people with amputated limbs, as the brain will be able to communicate with a robotic limb to give the patient more control. This kind of cyborg technology would significantly reduce the limitations that amputees deal with daily.
+# Machine Learning
+  Machine learning is a method for achieving AI. It means making a prediction about something based on training from sets of parsed data. There are lots of different ways a ML platform can implement training sets to predict things.
+  Neural networks is one of these ways a machine learning model can predict things. Neural networks work a bit like your brain, by tuning itself through lots and lots of training to understand what a banana is supposed to look like. You create layers of nodes that get very deep.
+    •	Traditional Programming: Data and program is run on the computer to produce the output.
+    •	Machine Learning: Data and output is run on the computer to create a program. This program can be used in traditional programming.
+  Learning Problems
+    Supervised Learning: 
+      describes a class of problem that involves using a model to learn a mapping between input examples and the target variable.
+      Models are fit on training data comprised of inputs and outputs and used to make predictions on test sets where only the inputs are provided and the outputs from the model are compared to the withheld target variables and used to estimate the skill of the model.
+        •	classification: Supervised learning problem that involves predicting a class label.
+        •	Regression: Supervised learning problem that involves predicting a numerical label.
+     Unsupervised Learning:
+      Unsupervised learning describes a class of problems that involves using a model to describe or extract relationships in data.
+      Compared to supervised learning, unsupervised learning operates upon only the input data without outputs or target variables. As such, unsupervised learning does not have a teacher correcting the model, as in the case of supervised learning.
+      There are many types of unsupervised learning, although there are two main problems that are often encountered by a practitioner, they are 
+        •	Clustering: that involves finding groups in the data.
+        •	Density estimation: that involves summarizing the distribution of data.
+      Reinforcement Learning:
+        Reinforcement learning describes a class of problems where an agent operates in an environment and must learn to operate using feedback.
+        The use of an environment means that there is no fixed training dataset, rather a goal or set of goals that an agent is required to achieve, actions they may perform, and feedback about performance toward the goal.
