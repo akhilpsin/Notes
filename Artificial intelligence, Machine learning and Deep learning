@@ -1,9 +1,11 @@
-ARTIFICIAL INTELLIGENCE, MACHINE LEARNING AND DEEP LEARNING
+# ARTIFICIAL INTELLIGENCE, MACHINE LEARNING AND DEEP LEARNING
 SUMMARY
 AI (ARTIFICIAL INTELLIGENCE) - ENABLES THE MACHINE TO THINK.
 ML (MACHINE LEARNING) - PROVIDE STATISTICAL TOOL TO EXPLORE DATA.
 DL (DEEP LEARNING) - MULTI NEURAL NETWORK ARCHITECTURE (MIMIC HUMAN BRAINS).
-ARTIFICIAL INTELLIGENCE
+
+
+# ARTIFICIAL INTELLIGENCE
 AI (artificial intelligence) is the mimicking of human intelligence by machines, especially computer systems. These processes include learning, self-correction and reasoning. Some of the applications of AI include speech recognition and machine vision. Artificial Intelligence is advancing dramatically. It is already transforming our world socially, politically and economically.
 It was coined by John McCarthy, an American computer scientist, in 1956 at The Dartmouth Conference where the idea was born.
 Some Application of AI
@@ -19,7 +21,7 @@ AI for robotics will allow us to address the challenges in taking care of an agi
 Cyborg Technology: One of the main limitations of being human is simply our own bodies and brains. Researcher Shimon Whiteson thinks that in the future, we will be able to augment ourselves with computers and enhance many of our own natural abilities. Though many of these possible cyborg enhancements would be added for convenience, others may serve a more practical purpose. Yoky Matsuka of Nest believes that AI will become useful for people with amputated limbs, as the brain will be able to communicate with a robotic limb to give the patient more control. This kind of cyborg technology would significantly reduce the limitations that amputees deal with daily.
 
 
-Machine Learning
+# Machine Learning
 Machine learning is a method for achieving AI. It means making a prediction about something based on training from sets of parsed data. There are lots of different ways a ML platform can implement training sets to predict things.
 Neural networks is one of these ways a machine learning model can predict things. Neural networks work a bit like your brain, by tuning itself through lots and lots of training to understand what a banana is supposed to look like. You create layers of nodes that get very deep.
 •	Traditional Programming: Data and program is run on the computer to produce the output.
