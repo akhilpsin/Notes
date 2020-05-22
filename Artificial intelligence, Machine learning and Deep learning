@@ -17,3 +17,25 @@ AI in Autonomous vehicles: Just like humans, self-driving cars need to have sens
 •	Natural language interfaces and virtual assistance technologies.
 AI for robotics will allow us to address the challenges in taking care of an aging population and allow much longer independence. It will drastically reduce, may be even bring down traffic accidents and deaths, as well as enable disaster response for dangerous situations for example the nuclear meltdown at the fukushima power plant.
 Cyborg Technology: One of the main limitations of being human is simply our own bodies and brains. Researcher Shimon Whiteson thinks that in the future, we will be able to augment ourselves with computers and enhance many of our own natural abilities. Though many of these possible cyborg enhancements would be added for convenience, others may serve a more practical purpose. Yoky Matsuka of Nest believes that AI will become useful for people with amputated limbs, as the brain will be able to communicate with a robotic limb to give the patient more control. This kind of cyborg technology would significantly reduce the limitations that amputees deal with daily.
+
+
+Machine Learning
+Machine learning is a method for achieving AI. It means making a prediction about something based on training from sets of parsed data. There are lots of different ways a ML platform can implement training sets to predict things.
+Neural networks is one of these ways a machine learning model can predict things. Neural networks work a bit like your brain, by tuning itself through lots and lots of training to understand what a banana is supposed to look like. You create layers of nodes that get very deep.
+•	Traditional Programming: Data and program is run on the computer to produce the output.
+•	Machine Learning: Data and output is run on the computer to create a program. This program can be used in traditional programming.
+Learning Problems
+Supervised Learning: 
+describes a class of problem that involves using a model to learn a mapping between input examples and the target variable.
+Models are fit on training data comprised of inputs and outputs and used to make predictions on test sets where only the inputs are provided and the outputs from the model are compared to the withheld target variables and used to estimate the skill of the model.
+•	classification: Supervised learning problem that involves predicting a class label.
+•	Regression: Supervised learning problem that involves predicting a numerical label.
+Unsupervised Learning:
+Unsupervised learning describes a class of problems that involves using a model to describe or extract relationships in data.
+Compared to supervised learning, unsupervised learning operates upon only the input data without outputs or target variables. As such, unsupervised learning does not have a teacher correcting the model, as in the case of supervised learning.
+There are many types of unsupervised learning, although there are two main problems that are often encountered by a practitioner, they are 
+•	Clustering: that involves finding groups in the data.
+•	Density estimation: that involves summarizing the distribution of data.
+REINFORCEMENT LEARNING:
+Reinforcement learning describes a class of problems where an agent operates in an environment and must learn to operate using feedback.
+The use of an environment means that there is no fixed training dataset, rather a goal or set of goals that an agent is required to achieve, actions they may perform, and feedback about performance toward the goal.
