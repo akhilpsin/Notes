@@ -59,3 +59,6 @@ Personalized shopping and entertainment: Ever wonder how Netflix comes up with s
 
 # Conclusion
 Artificial Intelligence is a technique which enables machines to mimic human behaviour. Aim of AI is to make intelligent machines that can perform human behaviour and take own smart decision.
+Machine Learning is sub-part of AI that uses statistical methods which enable machines to improve with experience/Learning.
+Deep Learning is sub-part of ML that make use of Neural Networks (similar to neurons in human being) to simulate human brain like behaviour. we need deep learning for the reason ML algorithms can’t play longer in higher dimension and/or higher number of observations data.
+
