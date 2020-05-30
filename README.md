@@ -1,11 +1,4 @@
 <p align="center">
-    <img src="https://drive.google.com/open?id=18MmsvRFMH_IQRfSoYgMbFuyBihWj3n4S"
-        height="130">
-</p>
-
-# Article Notes...
-
-<p align="center">
     <a href="https://github.com/badges/shields/graphs/contributors" alt="Contributors">
         <img src="https://img.shields.io/github/contributors/badges/shields" /></a>
     <a href="#backers" alt="Backers on Open Collective">
@@ -32,9 +25,18 @@
         <img src="https://img.shields.io/discord/308323056592486420?logo=discord"
             alt="chat on Discord"></a>
     <a href="https://twitter.com/intent/follow?screen_name=shields_io">
-        <img src="https://img.shields.io/twitter/follow/shields_io?style=social&logo=twitter"
+        <img src="https://img.shields.io/aur/last-modified/one?label=Linkedin&logo=inkedin.com%2Fin%2Fakhil-ps%2F&style=social"
             alt="follow on Twitter"></a>
 </p>
+
+
+<p align="center">
+    <img src="https://drive.google.com/open?id=18MmsvRFMH_IQRfSoYgMbFuyBihWj3n4S"
+        height="130">
+</p>
+
+# Article Notes...
+
 
 
 # Notes
