@@ -1,6 +1,6 @@
 
 <p align="center">
-    <img src="https://drive.google.com/open?id=18MmsvRFMH_IQRfSoYgMbFuyBihWj3n4S"
+    <img src="https://github.com/akhilpsin/Notes/blob/master/AI%2C%20ML%20%26%20DL/bull1.jpg"
         height="130">
 </p>
 
