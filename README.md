@@ -4,11 +4,6 @@
         height="130">
 </p>
 
-<p align="center">
-    <h1>Content Writing</h1>
-</p>
-
-
 # Article Notes...
 
 ## 1.Tips and tricks to use pinterest 
