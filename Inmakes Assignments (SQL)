@@ -1,0 +1,263 @@
+Table Name : employee
+FIRST_NAME LAST_NAME SALARY JOINING_DATE DEPARTMENT
+1 John Abraham 1000000 2013-01-01 12.00.00 Banking
+2 Michael Clarke 800000 2013-01-01 12.00.00 Insurance
+3 Roy Thomas 700000 2013-02-01 12.00.00 Banking
+4 Tom Jose 600000 2013-02-01 12.00.00 Insurance
+5 Jerry Pinto 650000 2013-02-01 12.00.00 Insurance
+6 Philip Mathew 750000 2013-02-01 12.00.00 Services
+7 Towino Thomas 650000 2013-01-01 12.00.00 Services
+8 Jeffin Jose 600000 2013-02-01 12.00.00 Insurance
+
+Table Name : Incentives
+EMPLOYEE_REF_ID INCENTIVE_DATE INCENTIVE_AMOUNT
+1 2013-02-01 5000
+2 2013-02-01 3000
+3 2013-02-01 4000
+4 2013-01-01 4500
+5 2013-01-01 3500
+
+
+
+1. Get all employee details from the employee table
+
+SELECT * FROM employee;  
+ 
+2. Get First_Name, Last_Name from employee table
+
+SELECT FIRST_NAME, LAST_NAME FROM employee;  
+ 
+3. Get First_Name from employee table in upper case
+
+SELECT UPPER(FIRST_NAME) AS FIRST_NAME_UPPERCASE FROM employee;  
+ 
+4. Get First_Name from employee table in lower case
+
+SELECT LOWER(FIRST_NAME) AS FIRST_NAME_LOWERCASE FROM employee;  
+ 
+5. Get unique DEPARTMENT from employee table
+
+SELECT DISTINCT DEPARTMENT FROM employee;  
+ 
+6. Select first 3 characters of FIRST_NAME from EMPLOYEE
+
+SELECT SUBSTRING(FIRST_NAME, 1, 3) AS FIRST_NAME_SUBSTR FROM employee;  
+ 
+7. Get position of 'o' in name 'John' from employee table
+
+SELECT INSTR(FIRST_NAME, 'o') AS POSITION_OF_O_IN_JOHN  
+FROM employee  
+WHERE FIRST_NAME = 'John';  
+ 
+8. Get FIRST_NAME from employee table after removing white spaces from right side
+
+SELECT RTRIM(FIRST_NAME) AS FIRST_NAME_RTRIM FROM employee;  
+ 
+9. Get FIRST_NAME from employee table after removing white spaces from left side
+
+SELECT LTRIM(FIRST_NAME) AS FIRST_NAME_LTRIM FROM employee;  
+ 
+10. Get length of FIRST_NAME from employee table
+
+SELECT LENGTH(FIRST_NAME) AS FIRST_NAME_LENGTH FROM employee;
+
+11. Get First_Name from employee table after replacing 'o' with '$'
+
+SELECT REPLACE(FIRST_NAME, 'o', '$') AS FIRST_NAME_MODIFIED FROM employee;  
+ 
+12. Get First_Name and Last_Name as single column from employee table separated by a '_'
+
+SELECT CONCAT(FIRST_NAME, '_', LAST_NAME) AS FULL_NAME FROM employee;  
+ 
+13. Get FIRST_NAME, Joining year, Joining Month and Joining Date from employee table
+
+SELECT FIRST_NAME,  
+       EXTRACT(YEAR FROM JOINING_DATE) AS JOINING_YEAR,  
+       EXTRACT(MONTH FROM JOINING_DATE) AS JOINING_MONTH,  
+       EXTRACT(DAY FROM JOINING_DATE) AS JOINING_DAY  
+FROM employee;
+ 
+
+14. Get all employee details from the employee table order by First_Name Ascending
+
+SELECT * FROM employee ORDER BY FIRST_NAME ASC;  
+ 
+15. Get all employee details from the employee table order by First_Name descending
+
+SELECT * FROM employee ORDER BY FIRST_NAME DESC;  
+ 
+16. Get all employee details from the employee table order by First_Name Ascending and Salary descending
+
+SELECT * FROM employee ORDER BY FIRST_NAME ASC, SALARY DESC;  
+ 
+17. Get employee details from employee table whose employee name is “John”
+
+SELECT * FROM employee WHERE FIRST_NAME = 'John';  
+ 
+18. Get employee details from employee table whose employee names are “John” and “Roy”
+
+SELECT * FROM employee WHERE FIRST_NAME IN ('John', 'Roy');  
+ 
+19. Get employee details from employee table whose employee names are not “John” and “Roy”
+
+SELECT * FROM employee WHERE FIRST_NAME NOT IN ('John', 'Roy');  
+ 
+20. Get employee details from employee table whose first name ends with 'n' and name contains 4 letters
+
+SELECT * FROM employee WHERE FIRST_NAME LIKE '___n';  
+
+21. Get employee details from employee table whose first name starts with 'J' and name contains 4 letters
+
+SELECT * FROM employee WHERE FIRST_NAME LIKE 'J___';  
+ 
+22. Get employee details from employee table whose Salary is greater than 600000
+
+SELECT * FROM employee WHERE SALARY > 600000;  
+ 
+23. Get employee details from employee table whose Salary is less than 800000
+
+SELECT * FROM employee WHERE SALARY < 800000;  
+ 
+24. Get employee details from employee table whose Salary is between 500000 and 800000
+
+SELECT * FROM employee WHERE SALARY BETWEEN 500000 AND 800000;  
+ 
+25. Get employee details from employee table whose name is 'John' or 'Michael'
+
+SELECT * FROM employee WHERE FIRST_NAME IN ('John', 'Michael');  
+ 
+26. Get employee details from employee table whose joining year is “2013”
+
+SELECT * FROM employee WHERE YEAR(JOINING_DATE) = 2013;  
+ 
+27. Get employee details from employee table whose joining month is “January”
+
+SELECT * FROM employee WHERE MONTH(JOINING_DATE) = 1;  
+ 
+28. Get employee details from employee table who joined before January 1st, 2013
+
+SELECT * FROM employee WHERE JOINING_DATE < '2013-01-01';  
+ 
+29. Get employee details from employee table who joined after January 31st
+
+SELECT * FROM employee WHERE JOINING_DATE > '2013-01-31';  
+ 
+30. Get Joining Date and Time from employee table
+
+SELECT JOINING_DATE FROM employee;  
+ 
+31. Get Joining Date, Time including milliseconds from the employee table
+ 
+SELECT JOINING_DATE FROM employee;  
+ 
+32. Get the difference between JOINING_DATE and INCENTIVE_DATE from employee and incentives table
+
+SELECT e.FIRST_NAME, e.LAST_NAME, DATEDIFF(i.INCENTIVE_DATE, e.JOINING_DATE) AS DATE_DIFF  
+FROM employee e  
+JOIN incentives i ON e.ID = i.EMPLOYEE_REF_ID;  
+ 
+33. Get current date
+
+SELECT CURRENT_DATE;  
+ 
+34. Get names of employees from the employee table who has '%' in Last_Name. Tip: Escape character for special characters in a query.
+ 
+SELECT FIRST_NAME, LAST_NAME FROM employee WHERE LAST_NAME LIKE '%\%%' ESCAPE '\';  
+ 
+35. Get Last Name from employee table after replacing special character with white space
+ 
+SELECT REPLACE(LAST_NAME, '%', ' ') AS LAST_NAME_MODIFIED FROM employee;  
+ 
+36. Get department-wise average salary from the employee table order by salary ascending
+
+SELECT DEPARTMENT, AVG(SALARY) AS AVERAGE_SALARY FROM employee GROUP BY DEPARTMENT ORDER BY AVERAGE_SALARY ASC;  
+ 
+37. Get department-wise maximum salary from the employee table order by salary ascending
+
+SELECT DEPARTMENT, MAX(SALARY) AS MAX_SALARY FROM employee GROUP BY DEPARTMENT ORDER BY MAX_SALARY ASC;  
+ 
+38. Get department-wise minimum salary from the employee table order by salary ascending
+
+SELECT DEPARTMENT, MIN(SALARY) AS MIN_SALARY FROM employee GROUP BY DEPARTMENT ORDER BY MIN_SALARY ASC;
+
+39. Select the number of employees joined with respect to year and month from the employee table
+
+SELECT YEAR(JOINING_DATE) AS Join_Year, MONTH(JOINING_DATE) AS Join_Month, COUNT(*) AS Num_Employees  
+FROM employee  
+GROUP BY YEAR(JOINING_DATE), MONTH(JOINING_DATE);  
+ 
+40. Select department, total salary with respect to a department from the employee table where the total salary is greater than 800000 order by Total_Salary descending
+
+SELECT DEPARTMENT, SUM(SALARY) AS Total_Salary  
+FROM employee  
+GROUP BY DEPARTMENT  
+HAVING SUM(SALARY) > 800000  
+ORDER BY Total_Salary DESC;  
+ 
+41. Select first_name, incentive amount from employee and incentives table for those employees who have incentives
+
+SELECT e.FIRST_NAME, i.INCENTIVE_AMOUNT  
+FROM employee e  
+JOIN incentives i ON e.ID = i.EMPLOYEE_REF_ID;  
+ 
+42. Select first_name, incentive amount from employee and incentives table for those employees who have incentives and incentive amount greater than 3000
+
+SELECT e.FIRST_NAME, i.INCENTIVE_AMOUNT  
+FROM employee e  
+JOIN incentives i ON e.ID = i.EMPLOYEE_REF_ID  
+WHERE i.INCENTIVE_AMOUNT > 3000;  
+ 
+43. Select first_name, incentive amount from employee and incentives table for all employees even if they didn't get incentives
+
+SELECT e.FIRST_NAME, i.INCENTIVE_AMOUNT  
+FROM employee e  
+LEFT JOIN incentives i ON e.ID = i.EMPLOYEE_REF_ID;  
+ 
+44. Select first_name, incentive amount from employee and incentives table for all employees even if they didn't get incentives and set incentive amount as 0 for those employees who didn't get incentives.
+
+SELECT e.FIRST_NAME, COALESCE(i.INCENTIVE_AMOUNT, 0) AS INCENTIVE_AMOUNT  
+FROM employee e  
+LEFT JOIN incentives i ON e.ID = i.EMPLOYEE_REF_ID;  
+ 
+45. Select first_name, incentive amount from employee and incentives table for all employees who got incentives using left join
+
+SELECT e.FIRST_NAME, i.INCENTIVE_AMOUNT  
+FROM employee e  
+LEFT JOIN incentives i ON e.ID = i.EMPLOYEE_REF_ID  
+WHERE i.INCENTIVE_AMOUNT IS NOT NULL;  
+ 
+46. Select max incentive with respect to the employee from employee and incentives table using a subquery
+
+SELECT e.FIRST_NAME, (SELECT MAX(INCENTIVE_AMOUNT) FROM incentives WHERE EMPLOYEE_REF_ID = e.ID) AS Max_Incentive  
+FROM employee e;  
+ 
+47. Select TOP 2 salaries from the employee table
+
+SELECT TOP 2 SALARY FROM employee ORDER BY SALARY DESC;  
+ 
+48. Select the 2nd Highest salary from the employee table
+
+SELECT TOP 1 SALARY FROM (  
+    SELECT DISTINCT TOP 2 SALARY  
+    FROM employee  
+    ORDER BY SALARY DESC  
+) AS Temp  
+ORDER BY SALARY ASC;  
+ 
+49. Select First_Name, LAST_NAME from the employee table as separate rows
+
+SELECT FIRST_NAME FROM employee  
+UNION ALL  
+SELECT LAST_NAME FROM employee;  
+ 
+50. Select employee details from the employee table if data exists in the incentive table
+
+SELECT * FROM employee e  
+WHERE EXISTS (  
+    SELECT 1 FROM incentives i  
+    WHERE e.ID = i.EMPLOYEE_REF_ID  
+);  
+
+
+
+
